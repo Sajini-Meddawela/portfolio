@@ -25,6 +25,21 @@ export const Projects = () => {
             description: "gvfgjbfdin",
             imgUrl: project3,
         },
+        {
+          title: "Epic_Eventify Event Management System",
+          description: "Role Base User Authentication and Authorization with Chat based user Interaction",
+          imgUrl: project1,
+      },
+      {
+          title: "My Personal Portfolio",
+          description: "Portfolio introducing my skills, projects and connecting Information.",
+          imgUrl: project2,
+      },
+      {
+          title: "Business Startup",
+          description: "gvfgjbfdin",
+          imgUrl: project3,
+      },
     ];
     return (
         <section className="project" id="projects">
@@ -35,14 +50,16 @@ export const Projects = () => {
                   {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                     <h2>Projects</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Welcome to my portfolio of projects! Here, you'll find a collection of my most significant and recent work, showcasing my skills and experience in web development, design. 
+                      Each project reflects my dedication to learning and applying new technologies, solving complex problems, and delivering high-quality, user-friendly applications.
+                      Explore my projects below and visit my GitHub for more details.</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                       <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
                           <Nav.Link eventKey="first">Tab 1</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                          <Nav.Link eventKey="second">Technologies</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                           <Nav.Link eventKey="third">Tab 3</Nav.Link>
@@ -63,7 +80,7 @@ export const Projects = () => {
                             }
                           </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="section">
+                        <Tab.Pane eventKey="second">
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">

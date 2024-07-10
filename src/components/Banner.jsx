@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImage from "../Assets/img/myImg.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import cv from '../Assets/cv/SajiniMeddawela.pdf'
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -47,6 +48,15 @@ export const Banner = () => {
     }
   }
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = cv;
+    link.download = 'Sajini_Meddawela_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -61,7 +71,7 @@ export const Banner = () => {
                   I'm a motivated IT undergraduate with a deep passion for technology and an insatiable thirst for knowledge. My journey in the tech world is driven by curiosity and a desire to continuously learn and grow. With a solid foundation in information technology and a keen interest in emerging trends, I am eager to apply my skills to tackle real-world challenges and contribute to innovative solutions.
                   <br/>Let's connect and explore the exciting world of technology together! Whether you have advice, opportunities, or simply want to share knowledge, I would love to hear from you. Feel free to reach out to me via LinkedIn or email. Together, we can drive innovation forward and make a difference in the tech world.
                   </p>
-                  <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={handleDownload}>Download CV <ArrowDownCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>

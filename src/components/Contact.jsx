@@ -27,7 +27,6 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
 
-    // Prepare the template parameters
     const templateParams = {
       from_name: `${formDetails.firstName} ${formDetails.lastName}`,
       from_email: formDetails.email,
@@ -49,7 +48,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
@@ -98,4 +97,3 @@ export const Contact = () => {
     </section>
   )
 }
-// update my code
