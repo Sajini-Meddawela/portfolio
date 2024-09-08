@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.81557a8b.css",
-    "main.js": "/portfolio/static/js/main.13b64bdc.js",
+    "main.css": "/portfolio/static/css/main.45b224ad.css",
+    "main.js": "/portfolio/static/js/main.ef9792b9.js",
     "static/js/453.9ac6fa07.chunk.js": "/portfolio/static/js/453.9ac6fa07.chunk.js",
     "static/media/project3.png": "/portfolio/static/media/project3.9b8320440892d4af9e70.png",
     "static/media/project1.png": "/portfolio/static/media/project1.c6daf29599b1f93611f7.png",
@@ -49,12 +49,12 @@
     "static/media/javascript.svg": "/portfolio/static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "static/media/flutter.svg": "/portfolio/static/media/flutter.53dd232b1ee8521cd1054b5c609dc726.svg",
     "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.81557a8b.css.map": "/portfolio/static/css/main.81557a8b.css.map",
-    "main.13b64bdc.js.map": "/portfolio/static/js/main.13b64bdc.js.map",
+    "main.45b224ad.css.map": "/portfolio/static/css/main.45b224ad.css.map",
+    "main.ef9792b9.js.map": "/portfolio/static/js/main.ef9792b9.js.map",
     "453.9ac6fa07.chunk.js.map": "/portfolio/static/js/453.9ac6fa07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81557a8b.css",
-    "static/js/main.13b64bdc.js"
+    "static/css/main.45b224ad.css",
+    "static/js/main.ef9792b9.js"
   ]
 }
