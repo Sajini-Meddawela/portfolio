@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.45b224ad.css",
-    "main.js": "/portfolio/static/js/main.2fc1b38c.js",
+    "main.js": "/portfolio/static/js/main.08401d00.js",
     "static/js/453.9ac6fa07.chunk.js": "/portfolio/static/js/453.9ac6fa07.chunk.js",
     "static/media/project1.png": "/portfolio/static/media/project1.c6daf29599b1f93611f7.png",
     "static/media/Shade.png": "/portfolio/static/media/Shade.bea361cfef80fefc2d1e.png",
     "static/media/Shade2.png": "/portfolio/static/media/Shade2.c87586c6c2f549cb4aa6.png",
     "static/media/AMCC.jpg": "/portfolio/static/media/AMCC.1e2247a6977d83d9dfed.jpg",
     "static/media/project2.png": "/portfolio/static/media/project2.f607afae858ea00a2dc6.png",
+    "static/media/Sajini_Meddawela_SE_Resume.pdf": "/portfolio/static/media/Sajini_Meddawela_SE_Resume.117225bcb08f4f93bf74.pdf",
     "static/media/project3.png": "/portfolio/static/media/project3.cafc92a14fc580fcbb7d.png",
     "static/media/CustomFont-3.ttf": "/portfolio/static/media/CustomFont-3.0f56ab0b295fd9fca620.ttf",
-    "static/media/Sajini_Meddawela_CV_SE.pdf": "/portfolio/static/media/Sajini_Meddawela_CV_SE.f4360357a69a412abded.pdf",
     "static/media/CustomFont-1.ttf": "/portfolio/static/media/CustomFont-1.4255a8c0672c79324995.ttf",
     "static/media/background.png": "/portfolio/static/media/background.cc1273af450504afe755.png",
     "static/media/myImg.svg": "/portfolio/static/media/myImg.84bf93eb20488a753440bf83d27db7bb.svg",
@@ -50,11 +50,11 @@
     "static/media/flutter.svg": "/portfolio/static/media/flutter.53dd232b1ee8521cd1054b5c609dc726.svg",
     "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.45b224ad.css.map": "/portfolio/static/css/main.45b224ad.css.map",
-    "main.2fc1b38c.js.map": "/portfolio/static/js/main.2fc1b38c.js.map",
+    "main.08401d00.js.map": "/portfolio/static/js/main.08401d00.js.map",
     "453.9ac6fa07.chunk.js.map": "/portfolio/static/js/453.9ac6fa07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.45b224ad.css",
-    "static/js/main.2fc1b38c.js"
+    "static/js/main.08401d00.js"
   ]
 }
