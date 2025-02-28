@@ -2,7 +2,7 @@ import {useState,useEffect} from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../Assets/img/logo.png';
 import Icon1 from '../Assets/img/nav-icon1.svg';
-import Icon2 from '../Assets/img/nav-icon2.svg';
+import Icon2 from '../Assets/img/behance.svg';
 import Icon3 from '../Assets/img/nav-icon3.svg';
 import Icon4 from '../Assets/img/github.png';
 
@@ -51,7 +51,7 @@ export const NavBar = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/sajini-meddawela" target="_blank" rel="noopener noreferrer"> <img src={Icon1} alt="LinkedIn"/> </a>
               <a href="https://github.com/Sajini-Meddawela" target="_blank" rel="nooperner noreferrer"><img src={Icon4} alt="GitHub"/></a>
-              <a href="#"> <img src={Icon2} alt="FaceBook"/> </a>
+              <a href="https://www.behance.net/sajinimeddawela" target="_blank" rel="nooperner noreferrer"> <img src={Icon2} alt="Behance"/> </a>
               <a href="#"> <img src={Icon3} alt="Instagram"/> </a>
             </div>
             <button className='vvd' onClick={handleConnectClick}><span>Let's Connect</span></button>

@@ -37,7 +37,7 @@ export const Skills = () => {
                         <Carousel responsive={responsive} infinite = {true} className="skill-slider">
                             <div className="item">
                                 <img src={skill1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Adaptability</h5>
                             </div>
                             <div className="item">
                                 <img src={skill2} alt="Image" />
@@ -49,7 +49,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={skill1} alt="Image" />
-                                <h5>UI/UX design</h5>
+                                <h5>Curiosity</h5>
                             </div>
                             <div className="item">
                                 <img src={skill3} alt="Image" />

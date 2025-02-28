@@ -83,6 +83,150 @@ p.success {
 p.danger {
 	color: red;
 }
+
+
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .banner h1 {
+      font-size: 55px;
+  }
+
+  .banner .rotate-with-margin .wrap {
+      font-size: 45px;
+  }
+
+  .skill h2, .project h2, .contact h2 {
+      font-size: 45px;
+  }
+
+  .contact form button {
+      padding: 14px 48px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner h1 {
+      font-size: 45px;
+  }
+
+  .banner .rotate-with-margin .wrap {
+      font-size: 40px;
+  }
+
+  .skill h2, .project h2, .contact h2 {
+      font-size: 35px;
+  }
+
+  .contact form button {
+      padding: 12px 40px;
+  }
+
+  .project .nav.nav-pills {
+      width: 90%;
+  }
+
+  .project p, .technology-description {
+      width: 75%;
+  }
+
+  .education-card {
+      max-width: 300px;
+  }
+
+  nav.navbar a.navbar-brand {
+      width: 12%;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+      padding: 0 20px;
+      font-size: 16px;
+  }
+
+  nav.navbar .navbar-text button {
+      padding: 14px 30px;
+      font-size: 16px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 767px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+      padding: 10px 15px;
+      font-size: 14px;
+  }
+
+  .banner {
+      padding: 200px 0 80px 0;
+  }
+
+  .banner h1 {
+      font-size: 35px;
+  }
+
+  .banner .rotate-with-margin .wrap {
+      font-size: 30px;
+  }
+
+  .banner p {
+      font-size: 14px;
+      width: 90%;
+  }
+
+  .banner button {
+      font-size: 16px;
+      margin-top: 40px;
+  }
+
+  .skill h2, .project h2, .contact h2 {
+      font-size: 30px;
+  }
+
+  .skill p, .project p, .technology-description {
+      font-size: 14px;
+      width: 90%;
+  }
+
+  .contact form input, .contact form textarea {
+      padding: 14px 20px;
+      font-size: 16px;
+  }
+
+  .contact form button {
+      padding: 12px 32px;
+      font-size: 16px;
+  }
+
+  .project .nav.nav-pills {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .education-card {
+      max-width: 100%;
+  }
+
+  .education-logo {
+      width: 50px;
+      height: 50px;
+  }
+
+  nav.navbar a.navbar-brand {
+      width: 15%;
+  }
+
+  nav.navbar .navbar-text button {
+      padding: 12px 28px;
+      font-size: 14px;
+  }
+}
+
+
+
+
+
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -259,6 +403,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+
+.rotate-with-margin {
+  display: inline-block;
+  margin-top: 30px; 
+}
+
+.rotate-with-margin .wrap {
+  font-size: 53px; 
+}
+
 .banner p {
   color: #B8B8B8;
   font-size: 16px;
@@ -349,9 +503,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: black;
 }
 .project h2 {
-	font-size: 55px;
+	font-size: 3.5rem;
 	font-weight: 700;
   text-align: center;
+  margin-bottom: 70px;
 }
 .project p {
   color: #B8B8B8;
@@ -360,8 +515,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
+  max-width: 100%;
   width: 56%;
 }
+
+.project button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.project button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.project button:hover svg {
+  margin-left: 25px;
+}
+
+
+/* Navigation Pills*/
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -435,30 +613,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-txtx {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  padding: 0 20px;
 }
+
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
+
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
+
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -468,7 +660,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+.technology-description {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 20px auto;
+  width: 56%;
+}
+
+.tech-col {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tech-image {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-image:hover {
+  transform: scale(1.1);
+}
+
+.tech-col p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -545,6 +770,106 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+
+.status-message {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.success {
+  color: #28a745; /* Green */
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.danger {
+  color: #dc3545; /* Red */
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/* EducationCard.css */
+
+.education-card {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100%;
+  max-width: 400px;
+}
+
+.education-card:hover {
+  background-color: rgba(255, 255, 255, 0.334);
+  color: black;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-content h3 {
+  color: white;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+.education-content p {
+  color: #B8B8B8;
+  font-size: 15px;
+  transition: color 0.3s;
+  margin: 5px 0; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  width: 100%;
+  text-align: center; 
+}
+
+.education-content h3, .education-card:hover .education-content p {
+  color: #FFFFFF;
+}
+
+
+.education-logo {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.education-logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
 
 /************ Footer Css ************/
 .footer {
@@ -623,4 +948,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.footer p a {
+  color: #B8B8B8;
+  text-decoration: none;
+}
+
+.footer p a:hover {
+  color: #fff;
+  text-decoration: underline;
 }

@@ -11,7 +11,7 @@ export const Contact = () => {
     email: '',
     phone: '',
     message: ''
-  }
+  };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
@@ -21,10 +21,24 @@ export const Contact = () => {
       ...formDetails,
       [category]: value
     });
-  }
+  };
+
+  const validateForm = () => {
+    const { firstName, lastName, email, phone, message } = formDetails;
+    if (!firstName || !lastName || !email || !phone || !message) {
+      setStatus({ success: false, message: 'Please fill in all fields..!' });
+      return false;
+    }
+    return true;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
     setButtonText("Sending...");
 
     const templateParams = {
@@ -84,7 +98,7 @@ export const Contact = () => {
                       {
                         status.message &&
                         <Col>
-                          <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                          <p className={`status-message ${status.success ? "success" : "danger"}`}>{status.message}</p>
                         </Col>
                       }
                     </Row>
@@ -95,5 +109,5 @@ export const Contact = () => {
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
