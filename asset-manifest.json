@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.45b224ad.css",
-    "main.js": "/portfolio/static/js/main.a440933f.js",
+    "main.css": "/portfolio/static/css/main.54762138.css",
+    "main.js": "/portfolio/static/js/main.ed7ebb7d.js",
     "static/js/453.9ac6fa07.chunk.js": "/portfolio/static/js/453.9ac6fa07.chunk.js",
     "static/media/project1.png": "/portfolio/static/media/project1.c6daf29599b1f93611f7.png",
     "static/media/project4.png": "/portfolio/static/media/project4.bda8623958faff5f8110.png",
@@ -9,6 +9,7 @@
     "static/media/Shade.png": "/portfolio/static/media/Shade.bea361cfef80fefc2d1e.png",
     "static/media/Shade2.png": "/portfolio/static/media/Shade2.c87586c6c2f549cb4aa6.png",
     "static/media/AMCC.jpg": "/portfolio/static/media/AMCC.1e2247a6977d83d9dfed.jpg",
+    "static/media/project6.png": "/portfolio/static/media/project6.6d8e40c5c0e34bbf38d2.png",
     "static/media/project2.png": "/portfolio/static/media/project2.613d2085608f95c803bc.png",
     "static/media/Sajini_Meddawela_SE_Resume.pdf": "/portfolio/static/media/Sajini_Meddawela_SE_Resume.117225bcb08f4f93bf74.pdf",
     "static/media/project3.png": "/portfolio/static/media/project3.cafc92a14fc580fcbb7d.png",
@@ -56,12 +57,12 @@
     "static/media/javascript.svg": "/portfolio/static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "static/media/flutter.svg": "/portfolio/static/media/flutter.53dd232b1ee8521cd1054b5c609dc726.svg",
     "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.45b224ad.css.map": "/portfolio/static/css/main.45b224ad.css.map",
-    "main.a440933f.js.map": "/portfolio/static/js/main.a440933f.js.map",
+    "main.54762138.css.map": "/portfolio/static/css/main.54762138.css.map",
+    "main.ed7ebb7d.js.map": "/portfolio/static/js/main.ed7ebb7d.js.map",
     "453.9ac6fa07.chunk.js.map": "/portfolio/static/js/453.9ac6fa07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45b224ad.css",
-    "static/js/main.a440933f.js"
+    "static/css/main.54762138.css",
+    "static/js/main.ed7ebb7d.js"
   ]
 }
