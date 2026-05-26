@@ -4,7 +4,7 @@ import headerImage from "../Assets/img/myImg.svg";
 import { ArrowDownCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import cv from '../Assets/cv/Sajini_Meddawela_SE_Resume.pdf'
+import cv from '../Assets/cv/Associate_Sajini_Meddawela.pdf'
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -51,7 +51,7 @@ export const Banner = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = cv;
-    link.download = 'Sajini_Meddawela_CV_SE.pdf';
+    link.download = 'Sajini_Meddawela_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

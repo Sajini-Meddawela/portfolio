@@ -503,8 +503,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: black;
 }
 .project h2 {
-	font-size: 3.5rem;
-	font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 70px;
 }
@@ -538,6 +538,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
+.view-project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 8px 0px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.5px;
+}
+
+.view-project-btn svg {
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-project-btn:hover {
+  background: transparent;
+  color: white;
+  transform: none;
+}
+
+.view-project-btn:hover svg {
+  transform: translateX(5px);
+}
+
+.view-project-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
 
 /* Navigation Pills*/
 .project .nav.nav-pills {
@@ -593,12 +628,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+
+/* Project Card Styles - Fixed alignment */
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 }
+
+.proj-imgbx img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -607,10 +656,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
 }
+
 .proj-imgbx:hover::before {
   height: 100%;
 }
+
 .proj-txtx {
   position: absolute;
   display: flex;
@@ -623,8 +677,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
   opacity: 0;
-  width: 100%;
-  padding: 0 20px;
+  width: 90%;
+  padding: 20px;
+  z-index: 2;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+/* Hide scrollbar but keep functionality */
+.proj-txtx::-webkit-scrollbar {
+  display: none;
+}
+.proj-txtx {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .proj-imgbx:hover .proj-txtx {
@@ -633,22 +699,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1.1em;
+  line-height: 1.3em;
+  margin-bottom: 12px;
+  color: white;
+  word-wrap: break-word;
 }
 
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: white;
+  margin-bottom: 0;
+  line-height: 1.5em;
+  width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
+/* Ensure consistent column heights */
+.project .row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.project .proj-imgbx {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .background-image-right {
@@ -691,7 +773,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   margin-top: 10px;
 }
-
 
 /************ Contact Css ************/
 .contact {

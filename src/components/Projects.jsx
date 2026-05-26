@@ -11,6 +11,8 @@ import project2 from "../Assets/img/project2.png";
 import project3 from "../Assets/img/project3.png";
 import project4 from "../Assets/img/project4.png";
 import project5 from "../Assets/img/project5.png";
+import project6 from "../Assets/img/project6.png";
+import project7 from "../Assets/img/project7.png";
 import shade2 from "../Assets/img/Shade2.png";
 import flutter from "../Assets/img/tech/flutter.svg";
 import java from "../Assets/img/tech/java.svg";
@@ -39,7 +41,7 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "EpicEventify Event Management System",
+      title: "EpicEventify - Event Management System",
       description:
         "Role Base User Authentication and Authorization with Chat based user Interaction.2nd year software development project",
       imgUrl: project1,
@@ -49,9 +51,10 @@ export const Projects = () => {
       description:
         "Portfolio introducing my skills, projects and connecting Information.",
       imgUrl: project2,
+      projectUrl: "https://sajini-meddawela.github.io/portfolio/", 
     },
     {
-      title: "DonorLink (OnGoing)",
+      title: "DonorLink - Donation Management System",
       description:
         "Web-based application designed to streamline the donation process for children and elderly care homes. The system will allow house owners to update the goods they need in real-time and manage their inventory efficiently. Donors can browse through these needs and make informed decisions about what to donate based on current requirements.",
       imgUrl: project3,
@@ -62,12 +65,25 @@ export const Projects = () => {
         "A personalized movie catalog application that allows users to store their favorite and trending movies in a curated list for personal use.",
       imgUrl: project4,
     },
-    // {
-    //   title: "DialDesk (OnGoing)",
-    //   description:
-    //     "As part of my company’s team, I contribute to a multi-tenant AI-powered call center platform that automates customer service using AI agents, with seamless human agent integration when needed. Built with Next.js, Node.js, GraphQL, and PostgreSQL, the system manages calls, real-time interactions, and analytics improving efficiency while ensuring scalability for diverse client needs",
-    //   imgUrl: project5,
-    // },
+    {
+      title: "DialDesk",
+      description:
+        "As part of my company's team, I contributed to a multi-tenant AI-powered call center platform that automates customer service using AI agents, with seamless human agent integration when needed. Built with Next.js, Node.js, GraphQL, and PostgreSQL, the system manages calls, real-time interactions, and analytics improving efficiency while ensuring scalability for diverse client needs",
+      imgUrl: project5,
+    },
+      {
+      title: "Fashion-blog site",
+      description:
+        "A sleek fashion blog built with HTML, CSS, and JavaScript, showcasing trending styles through minimalist design and curated galleries for modern fashion enthusiasts.",
+      imgUrl: project6,
+      projectUrl: "https://sajini-meddawela.github.io/fashion-blog/", 
+    },
+       {
+      title: "AcademiLib -  Personal Library System",
+      description:
+        "A full-stack web application designed to help students organize, manage, and access their academic resources efficiently. The system allows users to create semester folders, organize modules, upload various types of learning materials, and preview files directly within the platform – creating a personalized digital library experience.",
+      imgUrl: project7, 
+    },
   ];
 
   const techImages = [
@@ -116,6 +132,12 @@ export const Projects = () => {
       qualification: "Software Engineering Intern",
       institute: "Ariso Technologies Pvt. Ltd",
       year: "2025 (6 Months)",
+      logo: Intern,
+    },
+    {
+      qualification: "Associate Software Engineer",
+      institute: "Ariso Technologies Pvt. Ltd",
+      year: "2025 (3 Months)",
       logo: Intern,
     },
   ];
