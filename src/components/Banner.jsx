@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImage from "../Assets/img/myImg.svg";
+import headerImage from "../Assets/img/myImage.png";
 import { ArrowDownCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import cv from '../Assets/cv/Associate_Sajini_Meddawela.pdf'
+import cv from '../Assets/cv/SE_Sajini Meddawela.pdf'
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -12,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Undergraduate", "UI/UX Enthusiast", "FullStack Developer" ];
+  const toRotate = ["UI/UX Enthusiast", "FullStack Developer" ];
   const period = 2000;
 
   useEffect(() => {

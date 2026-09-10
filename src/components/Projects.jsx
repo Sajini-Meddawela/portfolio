@@ -137,7 +137,7 @@ export const Projects = () => {
     {
       qualification: "Associate Software Engineer",
       institute: "Ariso Technologies Pvt. Ltd",
-      year: "2025 (3 Months)",
+      year: "2025",
       logo: Intern,
     },
   ];
